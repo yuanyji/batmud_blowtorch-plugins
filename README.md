@@ -1,3 +1,4 @@
+Author:Potion(My batmud game id)
 English Instructions by GPT
 Software-related
 1. Backup

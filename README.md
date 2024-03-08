@@ -1,5 +1,7 @@
-Author:Potion(My batmud game id)
-English Instructions by GPT
+Author:Potion(My batmud game id).
+English Instructions by GPT.
+The chat plugin made by Daniel Block has not provided here.
+
 Software-related
 1. Backup
 ① Enter the game, click on the menu icon in the top right corner, select Export Settings to export personal game settings. Remember the configuration file name.

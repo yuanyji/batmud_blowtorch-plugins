@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<blowtorch xmlversion="2">
+  <plugins>
+    <plugin name="chat_miniwindow" id="50">
+      <author>Daniel Block</author>
+      <description><![CDATA[
+		
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	color: #999;
+}
+</style>
+</head>
+
+<body>
+<h3>Chat window插件
+  </p>
+</h3>
+聊天窗口插件安装并管理一个单独的窗口来过滤和显示聊天频道信息。聊天频道是根据聊天频道触发器中的第一个捕获组创建的</p> 
+<h3>用户界面行为：
+</h3>
+<p>聊天窗口是一个备用输出窗口，其中包含一个隐藏的ui控件工具栏</p> <h4>正常状态</p>
+</h4>
+<p>在正常状态下长按窗口可显示控件工具栏</p>
+<h4>工具栏选项</h4>
+<p>工具栏中包含过滤控件和窗口大小调整控件。在此状态下长按文本将激活文本选择。从左到右，控制栏按钮为</p>
+<ul>
+<li><strong>调整大小</strong>-通过点击和拖动操作调整窗口大小。按此按钮并上下拖动以调整窗口大小</li>
+<li><strong>频道过滤器选项卡</strong>-如果屏幕上的选项卡超过合适的范围，则将水平滚动。按操作将选择选项卡并过滤聊天数据，以便只显示该频道的信息。长按tab键将频道标签预加载到聊天栏中</li>
+<li><strong>隐藏</strong>-隐藏工具栏</li>
+</ul>
+</body>
+</html>
+		
+      
+      
+      
+      
+      
+      
+      ]]>
+      </description>
+      <windows>
+        <window name="chats" id="5010" script="chatwindow">
+          <layoutGroup target="large">
+            <layout orientation="landscape" alignParentTop="true" alignParentRight="true" width="fill_parent" height="320" />
+            <layout orientation="portrait" alignParentTop="true" alignParentRight="true" width="fill_parent" height="320" />
+          </layoutGroup>
+          <layoutGroup target="xlarge">
+            <layout orientation="landscape" alignParentTop="true" alignParentRight="true" width="fill_parent" height="320" />
+            <layout orientation="portrait" alignParentTop="true" alignParentRight="true" width="fill_parent" height="320" />
+          </layoutGroup>
+          <options>
+            <option key="font_size">30</option>
+            <option key="line_extra">2</option>
+            <option key="buffer_size">700</option>
+            <option key="font_path">/storage/emulated/0/BlowTorch/Fonts/luximri-3.ttf</option>
+          </options>
+        </window>
+      </windows>
+      <aliases />
+      <triggers>
+        <trigger title="tellmsg" pattern="^(.*) (tell)s .*you \'(.*)\'$" regexp="true">
+          <script function="processChat" fireWhen="always" />
+          <ack with=".fy $3" fireWhen="always" />
+          <notification title="Title Message" message="Custom Message!" fireWhen="always" useSound="false" useLights="false" useVibrate="true" vibrateType="2" spawnNew="false" useOngoing="false" />
+          <gag retarget="" />
+        </trigger>
+        <trigger title="chats" pattern="\[\d\d:\d\d\]:([\w ]*)\W(\w+.)\W:(.*)" regexp="true" sequence="1">
+          <script function="processChat" fireWhen="always" />
+          <gag />
+        </trigger>
+        <trigger title="grabber" pattern="^.*$" enabled="false">
+          <script function="processGrab" fireWhen="always" />
+          <gag />
+        </trigger>
+        <trigger title="tellmsg2" pattern="(You) (tell) .* \'(.*)\'" regexp="true">
+          <script function="processChat" fireWhen="always" />
+          <gag />
+        </trigger>
+      </triggers>
+      <timers />
+      <options title="聊天窗口" summary="聊天区域文字和大小">
+        <integer key="height" title="窗口高度" summary="聊天窗口大小">320</integer>
+        <string key="needtranslate" title="频道翻译" summary="输入需要自动翻译的频道，用逗号隔开">bat,newbie</string>
+        <integer key="notranscharnum" title="翻译字符数" summary="文本内容大于设置值时进行翻译">90</integer>
+        <integer key="landscapewidth" title="横版聊天框宽度" summary="横版聊天框在右上角，设置宽度值，本功能暂时无效">740</integer>
+        <boolean key="gag_extra" title="增加额外空行" summary="在每行聊天信息后添加空行">false</boolean>
+        <boolean key="add_extra" title="特殊字符后添加行" summary="在每行特殊字符输出行后添加空行">false</boolean>
+        <callback key="update" title="检查更新" summary="联网查询脚本更新"></callback>
+      </options>
+      <script name="bootstrap"><![CDATA[
+			
+			dofile(GetPluginInstallDirectory().."/chatserver.lua")
+			
+		
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </script>
+      <script name="chatwindow"><![CDATA[
+			
+			dofile(GetPluginInstallDirectory().."/chatwindow.lua")
+			
+		
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </script>
+    </plugin>
+  </plugins>
+</blowtorch>

@@ -1,0 +1,1 @@
+Minor adjustments to the original blowtorch app through decompilation to adapt to the plugin.

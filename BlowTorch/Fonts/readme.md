@@ -1,0 +1,1 @@
+I like the equal width font format, and is used in the plug-in fonts, if you do not like, please replace the software to avoid errors!

@@ -1,10 +1,0 @@
-,{Search Results:Monster Name:Vlad the Inhaler, the slavic golem Shortname:Vlad Average Exp:93829Alignment:a bit good Race:golem Aggro:No Possible Spells:hallucination, harm body, entropy Rape Prot:N/A },{Search Results:Monster Name:Ping-Pong Da-Chang, the oriental golem Shortname:Ping-pong Average Exp:-Alignment:a bit good Race:golem Aggro:No Possible Spells: Rape Prot:N/A },{Search Results:Monster Name:A sentry keeping an eye on the countryside. Shortname:Sentry Average Exp:1712Alignment:neutral Race:human Aggro:No Possible Spells: Rape Prot:N/A },{Search Results:Monster Name:A castle guard, making his rounds patrols around. Shortname:Guard Average Exp:3527Alignment:neutral Race:human Aggro:No Possible Spells: Rape Prot:N/A },{Search Results:Monster Name:Julio Ruiz con Carne Jesus Maria, the debauched golem Shortname:Julio Average Exp:113945Alignment:a bit good Race:golem Aggro:No Possible Spells:hallucination, harm body, entropy Rape Prot:N/A },{Search Results:Monster Name:A mounted cavalier is guarding the keep. Shortname:Cavalier Average Exp:5240Alignment:good Race:human Aggro:No Possible Spells:disease, mind blast, disruption, acid arrow, chaos bolt, shocking grasp, blast lightning Rape Prot:N/A },{Search Results:Monster Name:Pertti 'Pera' Kartio, a rednosed golem Shortname:Pertti Average Exp:-Alignment:a bit good Race:golem Aggro:No Possible Spells:harm body, entropy Rape Prot:N/A },{Search Results:Monster Name:Sven N�navpojker, the nordic golem Shortname:Sven Average Exp:113886Alignment:a bit good Race:golem Aggro:No Possible Spells: Rape Prot:N/A },{Search Results:
-Monster Name:Chiark, the castle's magician 
-Shortname:Chiark 
-Average Exp:8891
-Alignment:a bit evil 
-Race:elf 
-Aggro:No 
-Possible Spells:hallucination, make scar 
-Rape Prot:N/A 
-}

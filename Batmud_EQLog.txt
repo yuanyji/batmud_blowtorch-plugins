@@ -1,15 +1,0 @@
-,{Eq Name: the Trilloch's sword; 
-Material: dragonscale; 
-Sac Value: 2500000; 
-Weight: 2.520; 
-Type: short sword; 
-Stats: +3 Dam; 
-Location: Trilloch Tower; 
-},{Eq Name: A magic cloak; 
-Material: fur; 
-Sac Value: 831390; 
-Weight: 2.640; 
-Type: great cloak; 
-Stats: +5 Spr; 
-Location: Giantkillers; 
-}

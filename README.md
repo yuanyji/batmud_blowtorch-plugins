@@ -1,5 +1,6 @@
 # Author:Potion(My batmud game id).
 This github repository is used to share my batmud blowtorch plugins.
+I have not completed all functions explaination, continuously updated...
 # Main function provided by these plugins:
 ## Overview
 The BlowTorch plugin is a comprehensive tool designed to enhance the gaming experience by providing various functionalities such as world map,health bar,portraits,easy targetting,fast move,location route search, translation features, Termux interaction, map drawing, and more. This plugin is particularly useful for players who want to play batmud by Android devices.

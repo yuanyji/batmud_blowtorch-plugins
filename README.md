@@ -57,7 +57,7 @@ The BlowTorch plugin is a comprehensive tool designed to enhance the gaming expe
 - `.fy xxx`: Translate text manually.
 - Swipe health bar to toggle translation mode.
 ## Acknowledgments
-The translation feature uses the [DeepLX-Serverless](https://github.com/guobao2333/DeepLX-Serverless) project. Special thanks to the contributors for their work.# BlowTorch Plugin
+The translation feature uses the [DeepLX-Serverless](https://github.com/guobao2333/DeepLX-Serverless) project. Special thanks to the contributors for their work.
 
 
 For more detailed instructions and troubleshooting, please refer to the .docx document.

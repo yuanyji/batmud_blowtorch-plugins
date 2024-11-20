@@ -13,21 +13,21 @@ The BlowTorch plugin is a comprehensive tool designed to enhance the gaming expe
 2. **File Path Manager**:
    - Icons, logs, maps, and other files are organized under the BlowTorch directory for easy check.
    - Users should replace the contents of the BlowTorch directory with the provided compressed package.
-3.**Plugin Settings**:
+3. **Plugin Settings**:
    - Accessible via the in-game menu under the options tab.
    - Customize settings for combat information, chat windows, and Bat integration.
    - Options include automatic translation of chat messages, tick cycle settings, health bar alerts, font size adjustments, and more.
-4.**Translation Functionality**:
+4. **Translation Functionality**:
    - Use .fy xxx for manual translation between Chinese and English.
    - Translation can be toggled by swiping the health bar.
    - Utilizes the DeepLX-Serverless project for translation.
-5.**Termux Interaction**:
+5. **Termux Interaction**:
    - Execute commands and retrieve results within Termux, also chat with LLM modules is available.
    - Requires specific setup and permissions via ADB.
-6.**Map Drawing**:
+6. **Map Drawing**:
    - Create and manage maps with commands like .mp new, .mp ld, .mp bk, .mp sv, etc.
    - Customize map appearance and manage room coordinates.
-7.**Additional Features**:
+7. **Additional Features**:
    - Log management for chat and game information.
    - Whereis functionality for dungeon location tracking.
    - Font size adjustments for screen readability.

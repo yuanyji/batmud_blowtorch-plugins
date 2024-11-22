@@ -28,7 +28,8 @@ The BlowTorch plugin is a comprehensive tool designed to enhance the gaming expe
 6. **Map Drawing**:
    - Create and manage maps with commands like .mp new, .mp ld, .mp bk, .mp sv, etc.
    - Customize map appearance and manage room coordinates.
-7. **Additional Features**:
+7. **Convenient Functions**:
+   - Map Drawing: Create and manage maps with commands like .mp new, .mp ld, .mp bk, .mp sv, etc.
    - Log management for chat and game information.
    - Whereis functionality for dungeon location tracking.
    - Font size adjustments for screen readability.

@@ -37,6 +37,7 @@ The BlowTorch plugin is a comprehensive tool designed to enhance the gaming expe
 - **Installation**: Replace the existing BlowTorch directory with provided package or create new emulated/0/BlowTorch directory and install the BlowTorch 2.1 app.
 - **Configuration**: Import settings via the in-game menu and adjust plugin settings as needed.
 - **Commands**: Utilize the various commands and shortcuts provided by the plugin to enhance gameplay efficiency.
+# Function Usage
 ## Termux Setup
 1. Install ADB in Termux: `pkg install android-tools`
 2. Enable wireless debugging on your phone and pair with Termux.

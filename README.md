@@ -3,7 +3,7 @@ This github repository is used to share my batmud blowtorch plugins.
 I have not completed all functions explaination, continuously updated...
 # Main function provided by these plugins:
 ## Overview
-The BlowTorch plugin is a comprehensive tool designed to enhance the gaming experience by providing various functionalities such as world map,health bar,portraits,easy targetting,fast move,location route search, translation features, Termux interaction, map drawing, and more. This plugin is particularly useful for players who want to play batmud by Android devices.
+The BlowTorch plugin is designed to enhance the gaming experience by providing various functionalities such as world map,health bar,portraits,easy targetting,fast move,location route search, translation features, Termux interaction, map drawing, and more. This plugin is particularly useful for players who want to play batmud by Android devices.
 ## Key Features
 1. **App Modifications**: 
    - Reduced the time required for long-pressing the screen to bring up the clipboard.
@@ -33,7 +33,7 @@ The BlowTorch plugin is a comprehensive tool designed to enhance the gaming expe
    - Health bar: Show your hp,ep,sp status or party status graphically, also for enemy health.
    - Timer window: shows count every tick cycle.
    - Chat window: individual window for chat message display.
-## Usage
+# Plugin Usage
 - **Installation**: Replace the existing BlowTorch directory with provided package or create new emulated/0/BlowTorch directory and install the BlowTorch 2.1 app.
 - **Configuration**: Import settings via the in-game menu and adjust plugin settings as needed.
 - **Commands**: Utilize the various commands and shortcuts provided by the plugin to enhance gameplay efficiency.

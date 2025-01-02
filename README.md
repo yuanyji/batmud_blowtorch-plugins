@@ -84,9 +84,10 @@ The BlowTorch plugin is designed to enhance the gaming experience by providing v
 
 ## Translation Commands（En↹Zh）
 
-- Choose an api used for translation in menu-options-bat集成插件设置-翻译插件url.
+- Choose a url used for translation in menu-options-bat集成插件设置-翻译插件url.
 - `.fy xxx`: Translate text manually.
 - Swipe health bar to toggle translation mode.
+- Please do not abuse this function! If you translate frequently, please purchase a paid service from DeepL. The web version of the interface used by the plugin is subject to DeepL policies.
 
 ## Termux Interaction Setup
 1. Install ADB in Termux: `pkg install android-tools`
@@ -113,7 +114,7 @@ The BlowTorch plugin is designed to enhance the gaming experience by providing v
 - right portrait: click to switch to race commands list(etc. kill human, var1 human), swipe up to auto target enemy in current room ( sometimes may need to click again to target for unknow reason).
 - health bar: named barView in batscmsgwindow.lua, will send different command to server when click, swipe up, swipe down, swipe left, swipe right, search 'imgmessage5items(barView' in batscmsgwindow.lua to check or modifier every command.
 - You can also check and modifer other 8 buttons in the script, they are named buttonview0~buttonview6 and buttonview8. 
-- I strongly recommand set command var1~var5 as your own general skills in your game, cause the button ![skills button](https://github.com/yuanyji/batmud_blowtorch-plugins/tree/main/BlowTorch/Icons/buttons/charge.jpg) is used to send var1~var5.
+- I strongly recommand set command var1-var5 as your own general skills in your game, cause the button ![skills button](https://github.com/yuanyji/batmud_blowtorch-plugins/tree/main/BlowTorch/Icons/buttons/charge.jpg) is used to send var1-var5.
 ## Target monsters
 - swipe up or click right portrait to access enemy target without  monster information.
 - swipe up or swipe down button ![search button](https://github.com/yuanyji/batmud_blowtorch-plugins/tree/main/BlowTorch/Icons/buttons/book.jpg) to target and get monster information before you take action.
@@ -127,7 +128,7 @@ The BlowTorch plugin is designed to enhance the gaming experience by providing v
 - if you use some auto target function, it may aotomatic enter combat window.
 - if you want to exit manually, try click or swipe right portrait. Also send command by command line is ok, the command line will keep the last auto target command used.
 # Acknowledgments
-The translation feature uses the [DeepLX-Serverless](https://github.com/guobao2333/DeepLX-Serverless) project. Special thanks to the contributors for their work.
+The translation feature uses the [DeepLX-Serverless](https://github.com/guobao2333/DeepLX-Serverless) project. Special thanks to the contributors for their work. And please do not abuse this function! If you have a large amount of content to translate, please purchase a paid service from DeepL. The web version of the interface used by the plugin is subject to DeepL policies.
 
 
 For more detailed instructions and troubleshooting, please refer to the .docx document.

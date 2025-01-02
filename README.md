@@ -58,7 +58,7 @@ The BlowTorch plugin is designed to enhance the gaming experience by providing v
 
   prompt #&<continent>,<coords>&#
 
-  sc set &{colorhp},:{diffhp},{colorsp},:{diffsp},{colorep},:{diffep},<exp>,:{diffexp},<pool>,<eqset>,<weight>,<parry>,:<target>,<continent>,<coords>,<maxhp>,<maxsp>,<maxep>,<sec>,<min>,<hour>&
+  `sc set &{colorhp},:{diffhp},{colorsp},:{diffsp},{colorep},:{diffep},<exp>,:{diffexp},<pool>,<eqset>,<weight>,<parry>,:<target>,<continent>,<coords>,<maxhp>,<maxsp>,<maxep>,<sec>,<min>,<hour>&`
 
   ansi set:
 

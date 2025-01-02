@@ -44,19 +44,19 @@ The BlowTorch plugin is designed to enhance the gaming experience by providing v
 
 - **Commands**: Adjust theme and color settings to match plugin 
 
-  set channel_timestamp on
+  `set channel_timestamp on`
 
-  set graphic_exits on
+  `set graphic_exits on`
 
-  set map_frame on
+  `set map_frame on`
 
-  set ultra_verbose on
+  `set ultra_verbose on`
 
-  set coords_on_short on
+  `set coords_on_short on`
 
-  cutter off
+  `cutter off`
 
-  prompt #&<continent>,<coords>&#
+  `prompt #&<continent>,<coords>&#`
 
   `sc set &{colorhp},:{diffhp},{colorsp},:{diffsp},{colorep},:{diffep},<exp>,:{diffexp},<pool>,<eqset>,<weight>,<parry>,:<target>,<continent>,<coords>,<maxhp>,<maxsp>,<maxep>,<sec>,<min>,<hour>&`
 

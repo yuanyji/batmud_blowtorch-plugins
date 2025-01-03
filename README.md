@@ -40,7 +40,7 @@ To use my configuration: New-bat.org-23-Menu-Import Settings.
   - Chat window: individual window for chat message display.
 
 # Plugin Usage
-- **Installation**: Replace the existing BlowTorch directory with provided package or create new emulated/0/BlowTorch directory and install the BlowTorch 2.1 app.
+- **Installation**: Replace the existing BlowTorch directory with provided package or create new emulated/0/BlowTorch directory and install the BlowTorch 2.1 app, put all the files in order
 
 - **Configuration**: Import settings via the in-game menu and adjust plugin settings as needed.
 

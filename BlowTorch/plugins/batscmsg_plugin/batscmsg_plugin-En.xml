@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<blowtorch xmlversion="2">
+  <plugins>
+    <plugin name="batscmsg_plugin" id="90001">
+      <author>potion</author>
+      <description><![CDATA[
+		
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	color: #999;
+}
+</style>
+</head>
+
+<body>
+<h3>Bat Interger Plugin
+  </p>
+</h3>Convinent function for batmud
+<h3>status bar
+</h3>
+<p</p>
+ <h4></p>
+</h4>
+<p></p>
+</body>
+</html>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </description>
+      <windows>
+        <window name="batscmsgwindow" id="90000" script="batscmsgwindow">
+          <layoutGroup target="large">
+            <layout orientation="landscape" width="fill_parent" height="1000" />
+            <layout orientation="portrait" width="fill_parent" height="1000" />
+          </layoutGroup>
+          <layoutGroup target="xlarge">
+            <layout orientation="landscape" width="fill_parent" height="1000" />
+            <layout orientation="portrait" width="fill_parent" height="1000" />
+          </layoutGroup>
+          <options>
+            <option key="font_size">30</option>
+            <option key="line_extra">0</option>
+            <option key="buffer_size">10000</option>
+            <option key="font_path">/storage/emulated/0/BlowTorch/Fonts/luximri-3.ttf</option>
+          </options>
+        </window>
+      </windows>
+      <aliases>
+        <alias pre="^ccatch change$" post="/chatCapture('1')" enabled="true" />
+        <alias pre="WIKI" post=".swiki " enabled="true" />
+        <alias pre="^tcatch change$" post="/translationCapture()" enabled="true" />
+        <alias pre="^htt" post=".htt" enabled="true" />
+        <alias pre="^ht" post=".ht" enabled="true" />
+      </aliases>
+      <triggers>
+        <trigger title="logcatch" pattern="^(.*)$" regexp="true" enabled="false" group="chatcapture">
+          <script function="processAll" fireWhen="always" />
+        </trigger>
+        <trigger title="gagmaps" pattern="^((?:.---|&lt;...|\|...).{16}(?:\.|\||&gt;|'))  (.*)" regexp="true" enabled="false" sequence="1" group="translationcatchgroup">
+          <ack with=".fy $2" fireWhen="always" />
+        </trigger>
+        <trigger title="translationcatch" pattern="^(.*)$" regexp="true" enabled="false" sequence="3" group="translationcatchgroup">
+          <script function="processOrignText" fireWhen="always" />
+        </trigger>
+        <trigger title="doneskill" pattern="(You are prepared to do the skill.)" regexp="true">
+          <script function="damageInfoaccept" fireWhen="always" />
+        </trigger>
+        <trigger title="exitblook" pattern="\(([\w,]+)\)\.$" regexp="true" enabled="false" sequence="1">
+          <script function="exitprocess" fireWhen="always" />
+        </trigger>
+        <trigger title="loadmap" pattern="(?:#&amp;(\w+),(\d+,\d+)&amp;#)+" regexp="true" sequence="1">
+          <script function="LoadMap" fireWhen="always" />
+          <gag retarget="" />
+        </trigger>
+        <trigger title="cancelCallticknum" pattern="You feel like .* healed you .*" regexp="true" sequence="1">
+          <ack with='/WindowXCallS("batscmsgwindow","cancelcallback", "113")' fireWhen="always" />
+        </trigger>
+        <trigger title="donechant" pattern="(You are done with the chant.)" regexp="true" sequence="2">
+          <script function="damageInfoaccept" fireWhen="always" />
+        </trigger>
+        <trigger title="kbghost" pattern="You are a ghost. You may use the 'ghost'">
+          <ack with=".swchfc ghost" fireWhen="always" />
+        </trigger>
+        <trigger title="damageInfo" pattern="^(.*)$" regexp="true" enabled="false" sequence="2">
+          <script function="damageInfoaccept" fireWhen="always" />
+        </trigger>
+        <trigger title="teamviewgag" pattern="\| (\d\.\d)\W*(\w+)\W*(\w+)\W*(\d+)\((.*)\)\W*(\d+)\((.*)\)\W*(\d+)\((.*)\)\W*\|(.*)\|(.*)\|" regexp="true" sequence="1">
+          <script function="teamviewprocess" fireWhen="always" />
+        </trigger>
+        <trigger title="hpset" pattern="^&amp;(.*)&amp;$" regexp="true" sequence="1">
+          <ack with=".hpr $1" fireWhen="always" />
+          <gag retarget="" fromLog="false" fromOuput="false" />
+        </trigger>
+        <trigger title="roominfo" pattern="^(.*)$" regexp="true" enabled="false" sequence="3">
+          <script function="processRoomInformation" fireWhen="always" />
+        </trigger>
+        <trigger title="targetgag" pattern="^(.*)$" regexp="true" enabled="false" sequence="1">
+          <script function="targetnpc" fireWhen="always" />
+        </trigger>
+        <trigger title="targetgag2" pattern="^(.*)$" regexp="true" enabled="false" sequence="1">
+          <script function="targetnpc2" fireWhen="always" />
+        </trigger>
+      </triggers>
+      <timers />
+      <options title="InterPluSetting" summary="Changed settings will take effect the next time you load (just close the window and re-enter, no need to re-login).">
+        <boolean key="showhp" title="ShowHPBar" summary="Adding a status bar to the screen, set sc on please">true</boolean>
+        <boolean key="portrait" title="portrait view" summary="Vertical layout when checked, horizontal when unchecked">true</boolean>
+        <integer key="density_scale" title="PluginFontScal" summary="10 for Xiaomi 10, adjusted to re-enter the game">10</integer>
+        <integer key="lowhp" title="LowHPAlarm" summary="Bar is yellow when HP value falls below a certain value">250</integer>
+        <integer key="ticknum" title="tickCircle" summary="Usually 30 seconds, shorter with bonuses, etc.">30</integer>
+        <string key="portrait_L" title="LeftPortrait" summary="Enter the file name of the image file in the portraits folder, the name can be partially entered but cannot be wrong">wukong1</string>
+        <string key="portrait_R" title="RightPortrait" summary="Enter the file name of the image file in the mounts folder">heixiongj</string>
+        <list key="haptic_press" title="ButtonClickFeedback" summary="Perform haptic feedback when pressed.">
+          <value>0</value>
+          <item>Auto. Obey System Setting</item>
+          <item>Always. Override System Setting</item>
+          <item>Off</item>
+        </list>
+        <list key="haptic_flip" title="ButtonSwipeFeedback" summary="Perform Haptic feedback when flipped (swipe action).">
+          <value>1</value>
+          <item>Auto. Obey System Setting</item>
+          <item>Always. Override System Setting</item>
+          <item>Off</item>
+        </list>
+        <list key="deeplxurl" title="Translationurl" summary="Choose which url will be used.">
+          <value>0</value>
+          <item>None, never translate.</item>
+          <item>Local termux server.</item>
+          <item>Url provided by Deeplx project.</item>
+        </list>
+        <integer key="offsetmap" title="MapOffset" summary="Number of characters offset left or right from the center of the map">-15</integer>
+        <boolean key="drawandtranslate" title="translateRoomlong" summary="Synchronized translation of room descriptions when drawing the mini-map after checking the box">false</boolean>
+        <string key="whattotranslate" title="colorToTranslate" summary="Open the menu bar Options-Window-ANSI Color-3 to view the specific text color, refer to the default format to change as needed.">[1, 37]; [38, 5, 51]</string>
+      </options>
+      <script name="batscmsgwindow"><![CDATA[
+			
+			dofile(GetPluginInstallDirectory().."/batscmsgwindow.lua")     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </script>
+      <script name="bootstrap"><![CDATA[
+			
+			dofile(GetPluginInstallDirectory().."/batscmsgserver.lua")      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </script>
+    </plugin>
+  </plugins>
+</blowtorch>

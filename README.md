@@ -4,6 +4,8 @@ This github repository is used to share my batmud blowtorch plugins.
 # Main function provided by these plugins:
 ## Overview
 The BlowTorch plugin is designed to enhance the gaming experience by providing various functionalities such as world map,health bar,portraits,easy targetting,fast move,location route search, translation features, Termux interaction, map drawing, and more. This plugin is particularly useful for players who want to play batmud by Android devices.
+Visit the https://bt.happygoatstudios.com/ website for basic app usage.
+To use my configuration: New-bat.org-23-Menu-Import Settings.
 ## Key Features
 1. **App Modifications**: 
   - Reduced the time required for long-pressing the screen to bring up the clipboard.
